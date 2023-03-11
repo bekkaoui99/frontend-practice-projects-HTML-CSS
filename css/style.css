@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Cairo", sans-serif;
+}
+
+:root {
+  --color--: #3a6cf4;
+}
+
+header {
+  padding: 10px 10%;
+  background-color: #fff;
+}
+
+.headerW {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 8em;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navBar a {
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+  padding: 10px 20px;
+  transition: 0.8s ease;
+}
+
+.navBar a:hover {
+  padding-left: 40px;
+}
+
+.dropDown {
+  position: relative;
+}
+
+.navBar {
+  position: absolute;
+  right: 0;
+  width: 13em;
+  top: 100%;
+  display: none;
+
+  background-color: #fff;
+  box-shadow: 0 6px 25px rgba(1, 1, 1, 18%);
+  z-index: 100;
+}
+.navBar a:not(:last-child) {
+  border-bottom: 1px solid rgb(77, 74, 74);
+}
+
+.nav {
+  display: block;
+}
+
+.bar {
+  margin: auto;
+  font-size: 2em;
+}
+
+.landing {
+  background: url(../image/BG.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 80px);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.landing div {
+  z-index: 100;
+  text-align: center;
+}
+
+.landing div h1 {
+  font-size: 5em;
+  font-weight: 900;
+  color: var(--color--);
+}
+
+.landing div p {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.cards {
+  padding: 10px 10%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.card {
+  min-height: 50px;
+  width: 20em;
+  background-color: #fff;
+  box-shadow: 0 6px 25px rgba(1, 1, 1, 18%);
+  margin: 15px;
+  border-radius: 10px;
+  transition: 0.9s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+.icon i {
+  display: block;
+  font-size: 3em;
+  text-align: center;
+  color: var(--color--);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.info h2 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.info p {
+  color: rgb(155, 148, 148);
+  text-align: center;
+  padding: 0px 20px 25px;
+}
+
+.service {
+  padding: 10px 10%;
+}
+
+.rowService {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardService {
+  width: 22em;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.imgService img {
+  width: 100%;
+}
+
+.nestedCard {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 26px 10px;
+}
+
+.nestedCard div {
+  margin: 0px 10px;
+}
+
+.infoSevice h2 {
+  margin-bottom: 10px;
+  font-family: 800;
+}
+
+.infoSevice p {
+  font-size: 1em;
+
+  color: rgb(131, 125, 125);
+}
+
+.iconService i {
+  font-size: 3em;
+  color: var(--color--);
+}
+
+.cardService .imgService::after {
+  content: "";
+  position: absolute;
+  right: -35px;
+  top: 0;
+  width: 5em;
+  height: 100%;
+  background-color: var(--color--);
+  z-index: -10;
+}
+
+.imgPF img {
+  width: 100%;
+}
+
+.PF {
+  padding: 10px 10%;
+  margin-top: 100px;
+  min-height: 500px;
+}
+.infoPF {
+  margin-bottom: 25px;
+}
+.imgPF {
+  height: 50%;
+}
+
+.infoPF h2 {
+  text-align: center;
+  color: var(--color--);
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: 1.6px;
+}
+
+.infoPF p {
+  color: rgb(97, 94, 94);
+  line-height: 1.5;
+  padding: 5px 15px;
+}
+
+.btn a {
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(36, 33, 33);
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px 39px;
+  margin: 0 auto;
+  transition: 0.3s ease;
+}
+
+.btn a:hover {
+  color: white;
+  background-color: rgb(36, 33, 33);
+}
+.btn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.moreWork {
+  margin-top: 150px;
+  padding: 10px 10%;
+  min-height: 500px;
+}
+
+.cardMW {
+  width: 30em;
+  margin: 5px 25px;
+  position: relative;
+}
+
+.cardMW .imgMW::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: -20px;
+  background-color: rgb(176, 179, 189);
+  height: calc(100% + 40px);
+  z-index: -10;
+  width: 5em;
+}
+
+.cardMW .imgMW::after {
+  content: "";
+  position: absolute;
+  right: -39px;
+  top: -25px;
+  width: 4em;
+  z-index: -10;
+  height: 65%;
+  border-bottom: 31px solid var(--color--);
+  border-left: 97px solid var(--color--);
+}
+
+.imgMW img {
+  width: 90%;
+}
+
+.infoMW :first-child {
+  font-weight: 600;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+hr {
+  background-color: var(--color--);
+  width: 50%;
+  height: 3px;
+}
+.infoMW :last-child {
+  margin-top: 15px;
+  font-weight: 200;
+  font-size: 1.1em;
+  color: rgb(68, 64, 64);
+  line-height: 1.4;
+}
